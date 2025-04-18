@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register as Donor - Blood Donor Finder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Blood Donor Finder</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="request-blood.html">I Need Blood</a></li>
+            <li>
+              <a href="register-donor.html" class="active">Register as Donor</a>
+            </li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="register-donor">
+          <h2 class="page-title">REGISTER AS A BLOOD DONOR</h2>
+          <p class="subtitle">
+            Fill in your details to register as a blood donor and help save
+            lives.
+          </p>
+
+          <div class="register-container">
+            <div class="form-container">
+              <form id="registerDonorForm">
+                <div class="form-group">
+                  <label for="fullName">Full Name</label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter your full name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="age">Age</label>
+                  <input
+                    type="number"
+                    id="age"
+                    name="age"
+                    placeholder="Enter your age"
+                    required
+                    min="18"
+                    max="65"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="gender">Gender</label>
+                  <select id="gender" name="gender" required>
+                    <option value="">--Select Gender--</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="bloodType">Blood Type</label>
+                  <select id="bloodType" name="bloodType" required>
+                    <option value="">--Select Blood Group--</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email (Optional)</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="district">District (MP)</label>
+                  <select id="district" name="district" required>
+                    <option value="">--Select District--</option>
+                    <option value="district1">District 1</option>
+                    <option value="district2">District 2</option>
+                    <option value="district3">District 3</option>
+                    <option value="district4">District 4</option>
+                    <option value="district5">District 5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="address">Location Address</label>
+                  <input
+                    type="text"
+                    id="address"
+                    name="address"
+                    placeholder="Enter your address"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="lastDonated"
+                    >Last Donated Date (if applicable)</label
+                  >
+                  <input type="date" id="lastDonated" name="lastDonated" />
+                </div>
+                <div class="form-group">
+                  <label for="availability">Availability Status</label>
+                  <select id="availability" name="availability" required>
+                    <option value="available">Available</option>
+                    <option value="unavailable">Unavailable</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-red btn-full">
+                  Submit
+                </button>
+              </form>
+            </div>
+            <div class="illustration">
+              <img src="img1.webp" alt="Blood donation illustration" />
+            </div>
+          </div>
+          <a href="index.html" class="btn btn-back">Back</a>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2025 Blood Donor Finder. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
